@@ -15,7 +15,7 @@ for _root, _dirs, _files in os.walk(_imagesDirectory):
 			_images.append(_imagesDirectory + "\\" + _file)
 
 #prepare the figure
-mpl.rcParams['toolbar'] = 'None' #disable matplotlib toolbar
+#mpl.rcParams['toolbar'] = 'None' #disable matplotlib toolbar
 _fig = plt.figure("Image Slideshow")
 _gs = GridSpec(3, 3)
 _fig1 = plt.subplot(_gs[0:3, 0:3])
