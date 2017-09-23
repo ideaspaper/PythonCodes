@@ -14,6 +14,9 @@ for _root, _dirs, _files in os.walk(_imagesDirectory):
 		if _file.endswith(".jpg"):
 			_images.append(_imagesDirectory + "\\" + _file)
 
+_imageIndex = 0
+_imageTotal = len(_images)
+
 #prepare the figure
 #mpl.rcParams['toolbar'] = 'None' #disable matplotlib toolbar
 _fig = plt.figure("Image Slideshow")
@@ -21,8 +24,6 @@ _gs = GridSpec(3, 3)
 _fig1 = plt.subplot(_gs[0:3, 0:3])
 
 #initialize the figure with first image in the list
-_imageIndex = 0
-_imageTotal = len(_images)
 _img = cv2.imread(_images[_imageIndex], cv2.IMREAD_UNCHANGED)
 _imgShow = cv2.cvtColor(_img, cv2.COLOR_BGR2RGB) #for displaying purpose
 _imgShowIt = plt.imshow(_imgShow)
