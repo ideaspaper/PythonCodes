@@ -54,7 +54,7 @@ _sliderInitVal = 50
 _percentThreshold = _sliderInitVal
 _threshold = _percentThreshold / 100 * 255
 
-_fig = plt.figure("Image Slideshow")
+_fig = plt.figure("Binary Image with Manual Thresholding")
 _gs = GridSpec(15, 2)
 _fig1 = plt.subplot(_gs[0:13, 0])
 plt.xticks([]), plt.yticks([]) #hide tick values on X and Y axis
