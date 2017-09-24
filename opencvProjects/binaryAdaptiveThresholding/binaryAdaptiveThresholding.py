@@ -61,7 +61,7 @@ _img = cv2.cvtColor(_img, cv2.COLOR_BGR2GRAY)
 _nRollingWindow = 3
 _constant = 10
 
-_sliderInitVal = 4.5
+_sliderInitVal = 4
 _percentThreshold = _sliderInitVal
 _threshold = _percentThreshold / 100 * 255
 
